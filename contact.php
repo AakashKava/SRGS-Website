@@ -351,6 +351,3 @@ include "includes/header.php";
 <?php
 include "includes/footer.php";
 ?>
-
-
-<!-- testing the github integration -->
