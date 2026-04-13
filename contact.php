@@ -304,11 +304,7 @@ include "includes/header.php";
                     ></textarea>
                     </div>
                     <div class="form-button">
-                    <button
-                        type="submit"
-                        class="button button--secondary"
-                        aria-label="Send Message"
-                    >
+                    <button type="submit" class="button button--secondary" aria-label="Send Message">
                         Get Your Consultation
                         <span class="svg-wrapper">
                         <svg
@@ -355,3 +351,6 @@ include "includes/header.php";
 <?php
 include "includes/footer.php";
 ?>
+
+
+<!-- testing the github integration -->
