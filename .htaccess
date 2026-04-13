@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /SRGS/
+
+# Service detail FIRST
+RewriteRule ^service/([a-zA-Z0-9-]+)$ service-details.php?slug=$1 [L,QSA]
+
+# Project detail
+RewriteRule ^project/([a-zA-Z0-9-]+)$ project-details.php?slug=$1 [L,QSA]
+
+# Remove .php extension (LAST)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [L]
